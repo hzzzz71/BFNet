@@ -1,0 +1,61 @@
+# Local environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / frontend
+node_modules/
+dist/
+dist-ssr/
+frontend/dist/
+frontend/node_modules/
+frontend/vite.config.ts.timestamp-*.mjs
+*.local
+
+# Runtime data
+*.log
+*.db
+*.sqlite
+*.sqlite3
+backend/data/uploads/
+backend/data/reports/
+backend/polyp_ai.db
+backend/*-8000*.log
+backend/backend_*.log
+
+# Model weights and large binary artifacts
+*.pth
+*.pt
+*.onnx
+*.ckpt
+BFNet/data/
+BFNet/model/*.pth
+BFNet/*.pth
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Docker / temporary
+*.pid
+tmp/
+temp/
