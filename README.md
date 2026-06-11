@@ -137,25 +137,6 @@ docker-compose logs -f frontend
 docker-compose down
 ```
 
-## 上传到 GitHub 的安全策略
-
-本仓库不会提交以下内容：
-
-- `backend/.env` 等真实环境变量文件
-- 数据库文件，如 `*.db`、`*.sqlite`
-- 日志文件，如 `*.log`
-- 用户上传文件，如 `backend/data/uploads/`
-- Python 虚拟环境 `.venv/`
-- 前端依赖 `node_modules/` 和构建产物 `dist/`
-- 模型权重，如 `*.pth`、`*.pt`、`*.onnx`
-
-推送前请使用以下命令复查暂存文件：
-
-```powershell
-git diff --cached --name-only
-git status --short
-```
-
 ## 许可证
 
 本项目使用仓库中的 `LICENSE` 文件作为许可证说明。
